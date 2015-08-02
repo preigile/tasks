@@ -43,3 +43,46 @@ button {
 button:focus {
     outline: 0;
 }
+
+.fixed {
+	position: fixed;
+    z-index: 20;
+}
+
+/* table head styles */
+
+.background-fixed {
+	top: 0;
+	height: 100px;
+	background-color: #fff;
+	opacity: .97;
+}
+
+.title {
+	top: 0;
+	left: 25%;
+	width: 50%;
+	text-align: center;
+}
+
+.nav {
+	top: 60px;
+	left: 40%;
+	width: 20%;
+	margin: 0 auto;
+}
+
+.nav-right {
+	float: right;
+}
+
+.nav-left {
+	float: left;
+	background-color: #5FA2D7;
+}
+
+.airplanes-table-head {
+	top: 100px;
+	color: #fff;
+	background: #4F5D73;
+}
