@@ -1,4 +1,4 @@
-/* main styles */
+/* main */
 
 * {
 	padding: 0;
@@ -49,7 +49,52 @@ button:focus {
     z-index: 20;
 }
 
-/* table styles */
+tbody tr:nth-child(even) {
+	background: #E9E9E9;
+}
+
+tbody tr:nth-child(odd), .background-fixed {
+	background-color: #fff;
+}
+
+/* head */
+
+.background-fixed {
+	top: 0;
+	height: 100px;
+	opacity: .97;
+}
+
+.title {
+	top: 0;
+	left: 25%;
+	width: 50%;
+	text-align: center;
+}
+
+.nav {
+	top: 60px;
+	left: 40%;
+	width: 20%;
+	margin: 0 auto;
+}
+
+.nav-right {
+	float: right;
+}
+
+.nav-left {
+	float: left;
+	background-color: #5FA2D7;
+}
+
+.airplanes-table-head {
+	top: 100px;
+	color: #fff;
+	background-color: #4F5D73;
+}
+
+/* table */
 
 #arrival {
 	display: block;
@@ -95,40 +140,211 @@ th:nth-child(7), td:nth-child(7) {
     width: 200px;
 }
 
-/* table head styles */
+/* table body */
 
-.background-fixed {
-	top: 0;
-	height: 100px;
-	background-color: #fff;
-	opacity: .97;
+tbody {
+	top: 125px;
+	width: 100%;
+	vertical-align: middle;
 }
 
-.title {
-	top: 0;
-	left: 25%;
-	width: 50%;
-	text-align: center;
+tbody tr:nth-child(even) td, tbody tr:nth-child(odd) td {
+	z-index: 10;
 }
 
-.nav {
-	top: 60px;
-	left: 40%;
-	width: 20%;
-	margin: 0 auto;
+tbody tr:hover {
+	background-color: #D2E1E8;
+	opacity: .99;
 }
 
-.nav-right {
-	float: right;
-}
-
-.nav-left {
-	float: left;
-	background-color: #5FA2D7;
-}
-
-.airplanes-table-head {
-	top: 100px;
+td:hover {
 	color: #fff;
-	background: #4F5D73;
+	background-color: #5FA2D7;
+	cursor: pointer;
+}
+
+td:hover:before{
+    display: block;
+    top: -1000px;
+    right: 0;
+    bottom: -1000px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    content:'';
+	position: absolute;
+	z-index: -1;
+    background: #5FA2D7;
+    opacity: .2;
+}
+
+/* plane logo */
+
+.plane-logo {
+	width: 24px;
+	height: 24px;
+	background: url(http://pro-diz-art.ru/wp-content/uploads/2015/03/plane1.png) no-repeat;
+	background-size: 24px 24px;
+}
+
+.arrival-plane {
+	margin: 10px;
+	-webkit-transform: rotate(-125deg);
+	-moz-transform: rotate(-125deg);
+	-ms-transform: rotate(-125deg);
+	-o-transform: rotate(-125deg);
+	transform: rotate(-125deg);
+}
+
+.departure-plane {
+	margin: 10px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* aircraft */
+
+.aircraft-small {
+	display: none;
+}
+
+/* airline */
+
+.airline {
+	width: 224px;
+	padding-left: 5px;
+	text-align: left;
+}
+
+.airline-logo {
+	width: 82px;
+	height: 36px;
+	float: left;
+}
+
+.vologda {
+	background: url(https://yandex.st/rasp/media/data/company/logo/vologda.jpg) center center no-repeat;
+	background-size: 82px 36px;
+}
+
+.orenair {
+	background: url(http://yandex.st/rasp/media/data/company/logo/orenburg.jpg) center center no-repeat;
+	background-size: 85px 36px;
+}
+
+.finnair {
+	background: url(http://i195.photobucket.com/albums/z150/SIN7_photos/RTEmagicC_finnair_logo_und_schrift_01jpg.jpg) center center no-repeat;
+	background-size: 83px 51px;
+}
+
+.rossiya {
+	background: url(https://yandex.st/rasp/media/data/company/logo/logorus_1.jpg) center center no-repeat;
+	background-size: 83px 15px;
+}
+
+.nordavia {
+	background: url(https://yandex.st/rasp/media/data/company/logo/nordavia.jpg) center center no-repeat;
+	background-size: 83px 22px;
+}
+
+.nordstar {
+	background: url(http://toplogos.ru/images/logo-nordstar-airlines.jpg) center center no-repeat;
+	background-size: 82px 21px;
+}
+
+.utair {
+	background: url(https://yandex.st/rasp/media/data/company/logo/Utair.jpg) center center no-repeat;
+	background-size: 82px 36px;
+}
+
+.s7 {
+	background: url(https://yandex.st/rasp/media/data/company/logo/logo_2_Yandex.gif) center center no-repeat;
+	background-size: 84px 36px;
+}
+
+.aeroflot {
+	background: url(https://yandex.st/rasp/media/data/company/logo/aeroflot_logo_ru.gif) center center no-repeat;
+	background-size: 83px 19px;
+}
+
+.rusline {
+	background: url(https://yandex.st/rasp/media/data/company/logo/Rusline.jpg) center center no-repeat;
+	background-size: 83px 51px;
+}
+
+.don {
+	background: url(https://yandex.st/rasp/media/data/company/logo/a_don_1.gif) center center no-repeat;
+	background-size: 40px 41px;
+}
+
+.transaero {
+	background: url(https://yandex.st/rasp/media/data/company/logo/trair.gif) center center no-repeat;
+	background-size: 83px 13px;
+}
+
+.airbaltic {
+	background: url(https://yandex.st/rasp/media/data/company/logo/logo_airbaltic_globe.gif) center center no-repeat;
+	background-size: 83px 26px;
+}
+
+.severstal {
+	background: url(https://yandex.st/rasp/media/data/company/logo/severstal.jpg) center center no-repeat;
+	background-size: 82px 36px;
+}
+
+.astana {
+	background: url(https://yandex.st/rasp/media/data/company/logo/logo_astana.gif) center center no-repeat;
+	background-size: 82px 30px;
+}
+
+.lufthansa {
+	background: url(http://www.milesfortrips.com/wp-content/uploads/2015/01/lufthansa-logo.jpg) center center no-repeat;
+	background-size: 82px 20px;
+}
+
+.uz {
+	background: url(https://yandex.st/rasp/media/data/company/logo/uzbek.jpg) center center no-repeat;
+	background-size: 96px 41px;
+}
+
+.belavia {
+	background: url(https://yandex.st/rasp/media/data/company/logo/belavia.jpg) center center no-repeat;
+	background-size: 82px 36px;
+}
+
+.komiaviatrans {
+	background: url(http://www.cascadnpo.ru/logos/db/files/f4fe5d96b0b721.jpg) center center no-repeat;
+	background-size: 82px 34px;
+}
+
+.elal {
+	background: url(http://www.elal.com/_layouts/15/images/Matrix.Elal.com/elal_logo_ltr.png) center center no-repeat;
+	background-size: 82px 18px;
+}
+
+.airline-name {
+	position: relative;
+	top: 8px;
+	left: 5px;
+}
+
+.vologda + .airline-name, .orenair + .airline-name {
+	top: -1px;
+}
+
+/* status */
+
+.red {
+	color: #855776;
+}
+
+.yellow {
+	color: #AD8A72;
+}
+
+.green {
+	color: #6A9260;
 }
