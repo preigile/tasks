@@ -49,6 +49,52 @@ button:focus {
     z-index: 20;
 }
 
+/* table styles */
+
+#arrival {
+	display: block;
+}
+
+#departure {
+	display: none;
+}
+
+table {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 50px;
+	margin-top: 160px;
+}
+
+th, td {
+	position: relative;
+	height: 60px;
+	text-align: center;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 50px;
+}
+th:nth-child(2), td:nth-child(2) {
+    width: 120px;
+}
+th:nth-child(3), td:nth-child(3) {
+    width: 230px;
+}
+th:nth-child(4), td:nth-child(4) {
+    width: 160px;
+}
+th:nth-child(5), td:nth-child(5) {
+    width: 100px;
+}
+th:nth-child(6), td:nth-child(6) {
+    width: 140px;
+}
+th:nth-child(7), td:nth-child(7) {
+    width: 200px;
+}
+
 /* table head styles */
 
 .background-fixed {
