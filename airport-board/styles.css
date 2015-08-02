@@ -1,0 +1,45 @@
+/* main styles */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #4F5D73;
+	background: url(http://weni.ru/wallpapers/6ab05429f4e90b6ae9c1262a2a937945/3235_6.jpg) no-repeat center center fixed;
+}
+
+#wrapper, .background-fixed, .airplanes-table-head {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+h1, .date, th {
+	font-weight: 200;
+	text-align: center;
+}
+
+a {
+    color: #4F5D73;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #424A56;
+}
+
+button {
+	width: 110px;
+	height: 30px;
+	font-size: .8em;
+	color: #fff;
+	background-color: #99A5B9;
+	border: none;
+	cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
