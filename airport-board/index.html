@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>Табло Аэропорта Пулково</title>
+	<meta name="keywords" content="Табло Аэропорта Пулково">
+	<meta name="description" content="Онлайн-табло прилётов и вылетов Пулково. Здесь Вы увидите все рейсы в выбранный день, задержки и отмены, фактическое время прилетов и вылетов.">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div  id="wrapper">
+	<div class="fixed background-fixed"></div>
+	<header class="title fixed">
+		<h1>Аэропорт Пулково</h1>
+		<div class="date">
+			<p>29 июля Санкт-Пертербург</p>
+		</div>
+	</header>
+	<div class="content">
+		<nav class="nav fixed">
+			<button class="nav-left"
+				onclick="document.getElementById('arrival').style.display='block';
+				document.getElementById('departure').style.display='none'; document.getElementsByClassName('nav-left')[0].style.background='#5FA2D7'; document.getElementsByClassName('nav-right')[0].style.background='#99A5B9';">
+				Табло прилета</button>
+			<button class="nav-right"
+				onclick="document.getElementById('departure').style.display='block';
+				document.getElementById('arrival').style.display='none'; document.getElementsByClassName('nav-left')[0].style.background='#99A5B9'; document.getElementsByClassName('nav-right')[0].style.background='#5FA2D7';">
+				Табло вылета
+			</button>
+		</nav>
+		<div>
+			<div id="arrival">
+				<table cellspacing="0">
+					<thead>
+						<tr class="fixed airplanes-table-head">
+							<th rowspan="2" class="plane">
+								<div></div>
+							</th>
+							<th rowspan="2">
+								<div> Рейс </div>
+							</th>
+							<th rowspan="2" class="head-airline">
+								<div> Авиакомпания </div>
+							</th>
+							<th rowspan="2">
+								<div> Назначение </div>
+							</th>
+							<th rowspan="2">
+								<div> Расписание </div>
+							</th>
+							<th rowspan="2">
+								<div> Статус </div>
+							</th>
+							<th rowspan="2" class="note">
+								<div> Примечания </div>
+							</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr onclick="location.href='#popup1'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>VGV 612<br>
+								<small class="aircraft">ЯК-40</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo vologda"></div>
+								<span class="airline-name">Вологодское авиапредприятие</span>
+							</td>
+							<td>Вологда</td>
+							<td>19:00</td>
+							<td class="green">приземлился</td>
+							<td class="note">
+								<a href="http://www.avia.vologda.ru">http://www.avia.vologda.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup2'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>R2 5891<br>
+								<small class="aircraft">самолёт</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo orenair"></div>
+								<span class="airline-name">Оренбургские авиалинии</span>
+							</td>
+							<td>Симферополь</td>
+							<td>19:00</td>
+							<td class="yellow">задерживается<br> до 19:21</td>
+							<td class="note">
+								<a href="http://www.orenair.ru">http://www.orenair.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup3'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>AY 169<br>
+								<small class="aircraft">ATR-72</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo finnair"></div>
+								<span class="airline-name">Finnair</span>
+							</td>
+							<td> Хельсинки</td>
+							<td>19:05</td>
+							<td class="green">приземлился</td>
+							<td class="note">
+								<a href="http://www.finnair.com">http://www.finnair.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup4'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>SU 6154<br>
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Москва</td>
+							<td>19:15</td>
+							<td class="yellow">задерживается<br> до 19:34</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup5'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>5N 321<br>
+								<small class="aircraft aircraft-big">Boeing 737-500</small>
+								<small class="aircraft aircraft-small">B737</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo nordavia"></div>
+								<span class="airline-name">Нордавиа</span>
+							</td>
+							<td>Архангельск</td>
+							<td>19:20</td>
+							<td class="green">приземлился</td>
+							<td class="note">
+								<a href="http://www.nordavia.ru">http://www.nordavia.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup6'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>Y7 5718<br>
+								<small class="aircraft">самолёт</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo nordstar"></div>
+								<span class="airline-name">Нордстар</span>
+							</td>
+							<td>Бургас</td>
+							<td>19:20</td>
+							<td class="green">приземлился</td>
+							<td class="note">
+								<a href="http://www.nordstar.su">http://www.nordstar.su</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup7'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>UT 328<br> 
+								<small class="aircraft aircraft-big">Boeing 737-500</small>
+								<small class="aircraft aircraft-small">B737</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo utair"></div>
+								<span class="airline-name">ЮТэйр</span>
+							</td>
+							<td>Нарьян-Мар</td>
+							<td>19:25</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.utair.ru">http://www.utair.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup8'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>S7 43<br> 
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo s7"></div>
+								<span class="airline-name">S7 Airlines</span>
+							</td>
+							<td>Москва</td>
+							<td>19:30</td>
+							<td class="yellow">задерживается<br> до 19:41</td>
+							<td class="note">
+								<a href="http://www.s7.ru">http://www.s7.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup9'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>SU 26<br> 
+								<small class="aircraft aircraft-big">Airbus А321</small>
+								<small class="aircraft aircraft-small">А321</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo aeroflot"></div>
+								<span class="airline-name">Аэрофлот</span>
+							</td>
+							<td>Москва</td>
+							<td>19:40</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.aeroflot.ru">http://www.aeroflot.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup10'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>UT 383<br> 
+								<small class="aircraft aircraft-big">Boeing 737-500</small>
+								<small class="aircraft aircraft-small">B737</small></td>
+							<td class="airline">
+								<div class="airline-logo utair"></div>
+								<span class="airline-name">ЮТэйр</span>
+							</td>
+							<td>Москва</td>
+							<td>19:50</td>
+							<td>летит</td>
+							<td class="note">http://www.utair.ru</td>
+						</tr>
+
+						<tr onclick="location.href='#popup11'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>SU 6868<br> 
+								<small class="aircraft aircraft-big">Airbus А320</small>
+								<small class="aircraft aircraft-small">А320</small></td>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Симферополь</td>
+							<td>19:50</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup12'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>SU 6116<br> 
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Москва</td>
+							<td>19:55</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup13'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>SU 6344<br> 
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Москва</td>
+							<td>20:00</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup14'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>7R 270<br> 
+								<small class="aircraft aircraft-big">Canadair regional jet</small>
+								<small class="aircraft aircraft-small">CRJ</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rusline"></div>
+								<span class="airline-name">Руслайн</span>
+							</td>
+							<td>Пенза</td>
+							<td>20:10</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.rusline.aero">http://www.rusline.aero</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup15'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>D9 5322<br> 
+								<small class="aircraft">самолёт</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo don"></div>
+								<span class="airline-name">Донавиа</span>
+							</td>
+							<td>Минеральные Воды</td>
+							<td>20:10</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.aeroflot-don.ru">http://www.aeroflot-don.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup16'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>UT 476<br> 
+								<small class="aircraft aircraft-big">Boeing 737-500</small>
+								<small class="aircraft aircraft-small">B737</small></td>
+							<td class="airline">
+								<div class="airline-logo utair"></div>
+								<span class="airline-name">ЮТэйр</span>
+							</td>
+							<td>Томск</td>
+							<td>20:15</td>
+							<td class="yellow">задерживается<br> до 20:31</td>
+							<td class="note">
+								<a href="http://www.utair.ru">http://www.utair.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup17'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>UN 9450<br> 
+								<small class="aircraft">самолёт</small>
+							<td class="airline">
+								<div class="airline-logo transaero"></div>
+								<span class="airline-name">Трансаэро</span>
+							</td>
+							<td>Анталья</td>
+							<td>20:15</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.transaero.ru">http://www.transaero.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup18'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>BT 444<br> 
+								<small class="aircraft">самолёт</small>
+							<td class="airline">
+								<div class="airline-logo airbaltic"></div>
+								<span class="airline-name">Air Baltic</span>
+							</td>
+							<td>Рига</td>
+							<td>20:20</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.airbaltic.com">http://www.airbaltic.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup19'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>7R 282<br> 
+								<small class="aircraft aircraft-big">Canadair regional jet</small>
+								<small class="aircraft aircraft-small">CRJ</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rusline"></div>
+								<span class="airline-name">Руслайн</span>
+							</td>
+							<td>Вильнюс</td>
+							<td>20:20</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.rusline.aero">http://www.rusline.aero</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup20'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>D2 21<br> 
+								<small class="aircraft aircraft-big">Jet 200</small>
+								<small class="aircraft aircraft-small">J200</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo severstal"></div>
+								<span class="airline-name">Северсталь</span>
+							</td>
+							<td>Великий Устюг</td>
+							<td>20:30</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.severstal-avia.ru">http://www.severstal-avia.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup21'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>S7 23<br> 
+								<small class="aircraft aircraft-big">Airbus А321</small>
+								<small class="aircraft aircraft-small">А321</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo s7"></div>
+								<span class="airline-name">S7 Airlines</span>
+							</td>
+							<td>Москва</td>
+							<td>20:30</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.s7.ru">http://www.s7.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup22'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>KC 135<br> 
+								<small class="aircraft aircraft-big">Airbus А320</small>
+								<small class="aircraft aircraft-small">А320</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo astana"></div>
+								<span class="airline-name">Air Astana</span>
+							</td>
+							<td>Алматы</td>
+							<td>20:40</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.airastana.com">http://www.airastana.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup23'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>UN 42<br> 
+								<small class="aircraft aircraft-big">Boeing 737-700</small>
+								<small class="aircraft aircraft-small">B737</small>
+							<td class="airline">
+								<div class="airline-logo transaero"></div>
+								<span class="airline-name">Трансаэро</span>
+							</td>
+							<td>Москва</td>
+							<td>20:40</td>
+							<td class="yellow">задерживается<br> до 21:10</td>
+							<td class="note">
+								<a href="http://www.transaero.ru">http://www.transaero.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup24'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>SU 6328<br> 
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Калининград</td>
+							<td>20:40</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup25'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>UN 38<br> 
+								<small class="aircraft aircraft-big">Boeing 767-300</small>
+								<small class="aircraft aircraft-small">B767</small>
+							<td class="airline">
+								<div class="airline-logo transaero"></div>
+								<span class="airline-name">Трансаэро</span>
+							</td>
+							<td>Москва</td>
+							<td>20:45</td>
+							<td class="yellow">задерживается<br> до 21:35</td>
+							<td class="note">
+								<a href="http://www.transaero.ru">http://www.transaero.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup26'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>SU 8<br> 
+								<small class="aircraft aircraft-big">Airbus А321</small>
+								<small class="aircraft aircraft-small">А321</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo aeroflot"></div>
+								<span class="airline-name">Аэрофлот</span>
+							</td>
+							<td>Москва</td>
+							<td>20:45</td>
+							<td>по расписанию</td>
+							<td class="note">
+								<a href="http://www.aeroflot.ru">http://www.aeroflot.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup27'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>LH 1438<br> 
+								<small class="aircraft">самолёт</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo lufthansa"></div>
+								<span class="airline-name">Lufthansa</span>
+							</td>
+							<td>Франкфурт-на-Майне</td>
+							<td>21:00</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.lufthansa.com">http://www.lufthansa.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup28'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>HY 637<br> 
+								<small class="aircraft aircraft-big">Airbus А320</small>
+								<small class="aircraft aircraft-small">А320</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo uz"></div>
+								<span class="airline-name">UZ Airways</span>
+							</td>
+							<td>Ургенч</td>
+							<td>21:00</td>
+							<td>летит</td>
+							<td class="note">
+								<a href="http://www.uzairways.com">http://www.uzairways.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup29'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>SU 6164<br> 
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Москва</td>
+							<td>21:00</td>
+							<td>по расписанию</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup30'">
+							<td class="plane"><div class="plane-logo arrival-plane"></div></td>
+							<td>SU 28<br> 
+								<small class="aircraft aircraft-big">Airbus А320</small>
+								<small class="aircraft aircraft-small">А320</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo aeroflot"></div>
+								<span class="airline-name">Аэрофлот</span>
+							</td>
+							<td>Москва</td>
+							<td>21:10</td>
+							<td>по расписанию</td>
+							<td class="note">
+								<a href="http://www.aeroflot.ru">http://www.aeroflot.ru</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div id="departure">
+				<table cellspacing="0">
+					<thead>
+						<tr class="fixed airplanes-table-head">
+							<th rowspan="2" class="plane">
+								<div></div>
+							</th>
+							<th rowspan="2">
+								<div> Рейс </div>
+							</th>
+							<th rowspan="2" class="head-airline">
+								<div> Авиакомпания </div>
+							</th>
+							<th rowspan="2">
+								<div> Назначение </div>
+							</th>
+							<th rowspan="2">
+								<div> Расписание </div>
+							</th>
+							<th rowspan="2">
+								<div> Статус </div>
+							</th>
+							<th rowspan="2" class="note">
+								<div> Примечания </div>
+							</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr onclick="location.href='#popup31'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>SU 6879<br> 
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Самарканд</td>
+							<td>19:10</td>
+							<td class="green">вылетел</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup32'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>UN 35<br> 
+								<small class="aircraft aircraft-big">Boeing 777-300</small>
+								<small class="aircraft aircraft-small">B777</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo transaero"></div>
+								<span class="airline-name">Трансаэро</span>
+							</td>
+							<td>Москва (Домодедово)</td>
+							<td>19:20</td>
+							<td class="green">вылетел</td>
+							<td class="note">
+								<a href="http://www.transaero.ru">http://www.transaero.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup33'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>SU 6183<br> 
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Москва (Внуково)</td>
+							<td>19:25</td>
+							<td>посадка закончена</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup34'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>SU 25<br> 
+								<small class="aircraft aircraft-big">Airbus А320</small>
+								<small class="aircraft aircraft-small">А320</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo aeroflot"></div>
+								<span class="airline-name">Аэрофлот</span>
+							</td>
+							<td>Москва (Шереметьево)</td>
+							<td>19:30</td>
+							<td>посадка закончена</td>
+							<td class="note">
+								<a href="http://www.aeroflot.ru">http://www.aeroflot.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup35'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>AY 170<br> 
+								<small class="aircraft aircraft-big">ATR-72</small>
+								<small class="aircraft aircraft-small">ATR-72</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo finnair"></div>
+								<span class="airline-name">Finnair</span>
+							</td>
+							<td>Хельсинки</td>
+							<td>19:35</td>
+							<td>посадка закончена</td>
+							<td class="note">
+								<a href="http://www.finnair.com">http://www.finnair.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup36'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>SU 6573<br> 
+								<small class="aircraft aircraft-big">Airbus А320</small>
+								<small class="aircraft aircraft-small">А320</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Красноярск</td>
+							<td>19:35</td>
+							<td>посадка закончена</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup37'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>UN 6246<br> 
+								<small class="aircraft aircraft-big">Boeing 737-500</small>
+								<small class="aircraft aircraft-small">B737</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo transaero"></div>
+								<span class="airline-name">Трансаэро</span>
+							</td>
+							<td>Минск</td>
+							<td>19:40</td>
+							<td>посадка закончена</td>
+							<td class="note">
+								<a href="http://www.transaero.ru">http://www.transaero.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup38'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>S7 4507<br> 
+								<small class="aircraft aircraft-big">Embraer ERJ-195</small>
+								<small class="aircraft aircraft-small">ERJ-195</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo s7"></div>
+								<span class="airline-name">S7 Airlines</span>
+							</td>
+							<td>Минск</td>
+							<td>19:40</td>
+							<td>посадка закончена</td>
+							<td class="note">
+								<a href="http://www.s7.ru">http://www.s7.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup39'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>B2 946<br> 
+								<small class="aircraft aircraft-big">Embraer ERJ-195</small>
+								<small class="aircraft aircraft-small">ERJ-195</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo belavia"></div>
+								<span class="airline-name">Белавиа</span>
+							</td>
+							<td>Минск</td>
+							<td>19:40</td>
+							<td>посадка закончена</td>
+							<td class="note">
+								<a href="http://belavia.by">http://belavia.by</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup40'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>SU 6801<br> 
+								<small class="aircraft aircraft-big">Airbus А320</small>
+								<small class="aircraft aircraft-small">А320</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Алматы</td>
+							<td>19:45</td>
+							<td>ожидание посадки</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup41'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>UN 25<br> 
+								<small class="aircraft">самолёт</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo transaero"></div>
+								<span class="airline-name">Трансаэро</span>
+							</td>
+							<td>Москва</td>
+							<td>19:50</td>
+							<td class="red">отменён</td>
+							<td class="note">
+								<a href="http://www.transaero.ru">http://www.transaero.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup42'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>ИГ 735<br> 
+								<small class="aircraft aircraft-big">Embraer ERJ-135</small>
+								<small class="aircraft aircraft-small">ERJ-135</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo komiaviatrans"></div>
+								<span class="airline-name">Комиавиатранс</span>
+							</td>
+							<td>Сыктывкар</td>
+							<td>19:55</td>
+							<td>ожидание посадки</td>
+							<td class="note">
+								<a href="http://www.komiaviatrans.ru">http://www.komiaviatrans.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup43'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>SU 6185<br> 
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Москва (Домодедово)</td>
+							<td>20:00</td>
+							<td>ожидание посадки</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup44'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>SU 6541<br> 
+								<small class="aircraft aircraft-big">Airbus А320</small>
+								<small class="aircraft aircraft-small">А320</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Новосибирск</td>
+							<td>20:05</td>
+							<td>ожидание посадки</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup45'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>LY 8876<br> 
+								<small class="aircraft aircraft-big">Airbus А320</small>
+								<small class="aircraft aircraft-small">А320</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo elal"></div>
+								<span class="airline-name">El Al</span>
+							</td>
+							<td>Москва (Домодедово)</td>
+							<td>20:10</td>
+							<td>ожидание посадки</td>
+							<td class="note">
+								<a href="http://www.elal.com/ru/Russia/Pages/default.aspx">http://www.elal.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup46'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>5N 146<br> 
+								<small class="aircraft aircraft-big">Boeing 737-500</small>
+								<small class="aircraft aircraft-small">B737</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo nordavia"></div>
+								<span class="airline-name">Нордавиа</span>
+							</td>
+							<td>Архангельск</td>
+							<td>20:15</td>
+							<td>ожидание посадки</td>
+							<td class="note">
+								<a href="http://www.nordavia.ru">http://www.nordavia.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup47'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>VGV 613<br> 
+								<small class="aircraft aircraft-big">ЯК-40</small>
+								<small class="aircraft aircraft-small">ЯК-40</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo vologda"></div>
+								<span class="airline-name">Вологодское авиапредприятие</span>
+							</td>
+							<td>Вологда</td>
+							<td>20:30</td>
+							<td>ожидание посадки</td>
+							<td class="note">
+								<a href="http://www.avia.vologda.ru">http://www.avia.vologda.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup48'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>SU 27<br> 
+								<small class="aircraft aircraft-big">Airbus А321</small>
+								<small class="aircraft aircraft-small">А321</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo aeroflot"></div>
+								<span class="airline-name">Аэрофлот</span>
+							</td>
+							<td>Москва (Шереметьево)</td>
+							<td>20:35</td>
+							<td>ожидание посадки</td>
+							<td class="note">
+								<a href="http://www.aeroflot.ru">http://www.aeroflot.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup49'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>SU 5892<br> 
+								<small class="aircraft aircraft-big">Boeing 777-200</small>
+								<small class="aircraft aircraft-small">B777</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo aeroflot"></div>
+								<span class="airline-name">Аэрофлот</span>
+							</td>
+							<td>Симферополь</td>
+							<td>20:50</td>
+							<td>регистрация</td>
+							<td class="note">
+								<a href="http://www.aeroflot.ru">http://www.aeroflot.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup50'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>R2 5892<br> 
+								<small class="aircraft">самолёт</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo orenair"></div>
+								<span class="airline-name">Оренбургские авиалинии</span>
+							</td>
+							<td>Симферополь</td>
+							<td>20:50</td>
+							<td>регистрация</td>
+							<td class="note">
+								<a href="http://www.orenair.ru">http://www.orenair.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup51'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>5N 511<br> 
+								<small class="aircraft aircraft-big">Boeing 737-500</small>
+								<small class="aircraft aircraft-small">B737</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo nordavia"></div>
+								<span class="airline-name">Нордавиа</span>
+							</td>
+							<td>Волгоград</td>
+							<td>20:55</td>
+							<td>регистрация</td>
+							<td class="note">
+								<a href="http://www.nordavia.ru">http://www.nordavia.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup52'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>SU 6171<br> 
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rossiya"></div>
+								<span class="airline-name">Россия</span>
+							</td>
+							<td>Москва (Домодедово)</td>
+							<td>20:55</td>
+							<td>регистрация</td>
+							<td class="note">
+								<a href="http://www.rossiya-airlines.com">http://www.rossiya-airlines.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup53'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>UT 384<br> 
+								<small class="aircraft aircraft-big">Boeing 737-500</small>
+								<small class="aircraft aircraft-small">B737</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo utair"></div>
+								<span class="airline-name">ЮТэйр</span>
+							</td>
+							<td>Москва (Внуково)</td>
+							<td>21:00</td>
+							<td>регистрация</td>
+							<td class="note">
+								<a href="http://www.utair.ru">http://www.utair.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup54'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>SU 5323<br> 
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo don"></div>
+								<span class="airline-name">Донавиа</span>
+							</td>
+							<td>Минеральные Воды</td>
+							<td>21:00</td>
+							<td>регистрация</td>
+							<td class="note">
+								<a href="http://www.aeroflot-don.ru">http://www.aeroflot-don.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup55'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>7R 553<br> 
+								<small class="aircraft aircraft-big">Canadair regional jet</small>
+								<small class="aircraft aircraft-small">CRJ</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo rusline"></div>
+								<span class="airline-name">Руслайн</span>
+							</td>
+							<td>Воронеж</td>
+							<td>21:05</td>
+							<td>регистрация</td>
+							<td class="note">
+								<a href="http://www.rusline.aero">http://www.rusline.aero</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup56'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>LY 8880<br> 
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo elal"></div>
+								<span class="airline-name">El Al</span>
+							</td>
+							<td>Москва (Домодедово)</td>
+							<td>21:10</td>
+							<td>регистрация</td>
+							<td class="note">
+								<a href="http://www.elal.com/ru/Russia/Pages/default.aspx">http://www.elal.com</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup57'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>S7 24<br> 
+								<small class="aircraft aircraft-big">Airbus A319</small>
+								<small class="aircraft aircraft-small">A319</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo s7"></div>
+								<span class="airline-name">S7 Airlines</span>
+							</td>
+							<td>Москва (Домодедово)</td>
+							<td>21:10</td>
+							<td>регистрация</td>
+							<td class="note">
+								<a href="http://www.s7.ru">http://www.s7.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup58'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>D2 22<br> 
+								<small class="aircraft aircraft-big">Jet 200</small>
+								<small class="aircraft aircraft-small">J200</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo severstal"></div>
+								<span class="airline-name">Северсталь</span>
+							</td>
+							<td>Череповец</td>
+							<td>21:15</td>
+							<td>регистрация</td>
+							<td class="note">
+								<a href="http://www.severstal-avia.ru">http://www.severstal-avia.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup59'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>UT 470<br> 
+								<small class="aircraft aircraft-big">Boeing 737-500</small>
+								<small class="aircraft aircraft-small">B737</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo utair"></div>
+								<span class="airline-name">ЮТэйр</span>
+							</td>
+							<td>Сургут</td>
+							<td>21:15</td>
+							<td>регистрация</td>
+							<td class="note">
+								<a href="http://www.utair.ru">http://www.utair.ru</a>
+							</td>
+						</tr>
+
+						<tr onclick="location.href='#popup60'">
+							<td class="plane"><div class="plane-logo departure-plane"></div></td>
+							<td>BT 445<br> 
+								<small class="aircraft">самолёт</small>
+							</td>
+							<td class="airline">
+								<div class="airline-logo airbaltic"></div>
+								<span class="airline-name">Air Baltic</span>
+							</td>
+							<td>Рига</td>
+							<td>21:20</td>
+							<td>регистрация</td>
+							<td class="note">
+								<a href="http://www.airbaltic.com">http://www.airbaltic.com</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
